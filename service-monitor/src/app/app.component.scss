@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  height: 98vh;
+  overflow: hidden;
+}
+
+.menu {
+    width: 250px;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu li.active {
+    background-color: #ccc;
+    color: #fff;
+  }
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.content,
+.menu {
+  padding: 1.2em;
+}
+
+/* Optional: Customize scrollbar styles */
+.menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
